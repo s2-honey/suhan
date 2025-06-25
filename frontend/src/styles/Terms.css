@@ -1,0 +1,45 @@
+/* 전체 css */
+.terms-container {
+  background-color: white;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+.terms-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.terms-back {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.terms-title {
+  flex: 1;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 28px;
+}
+
+/* 서비스 이용약관 영역 */
+.terms-body {
+  padding: 20px 15px 20px 15px;
+  font-size: 15px;
+}
+
+.terms-box {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  white-space: pre-line;
+  border-left: 4px solid #ff9f4a;
+  padding: 25px;
+  background-color: #f0f0f0;
+}

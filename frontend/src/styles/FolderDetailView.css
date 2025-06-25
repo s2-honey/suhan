@@ -1,0 +1,188 @@
+/* 문장 카드 전체 슬라이드 영역 */
+.folder-sentence-card-container {
+  width: 100%;
+}
+
+.folder-sentence-card-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* 카드 트랙 */
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  margin: 10px 0px 40px 0px;
+}
+
+/* 문장 카드 */
+.folder-sentence-card {
+  user-select: none;
+  flex: 0 0 350px;
+  margin: 0 10px;
+  height: 450px;
+  background-color: #fff3d8;
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* 화살표 버튼 */
+.folder-arrow-btn {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #555;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.folder-arrow-btn:first-of-type {
+  left: -10px;
+}
+
+.folder-arrow-btn:last-of-type {
+  right: -10px;
+}
+
+.folder-arrow-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* 문장 인덱스 및 버튼 */
+.folder-sentence-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.folder-sentence-index {
+  font-size: 13px;
+  color: #777;
+}
+
+.folder-sentence-actions span {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* 삭제/수정 아이콘 */
+.folder-delete-icon,
+.folder-edit-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.folder-delete-icon {
+  color: #444;
+}
+
+.folder-delete-icon:hover {
+  color: rgb(133, 133, 133);
+}
+
+.folder-edit-icon {
+  color: #a1a1a1;
+}
+
+.folder-edit-icon:hover {
+  color: rgb(192, 192, 192);
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  resize: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* 문장 내용 */
+.folder-sentence-date {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 50px;
+}
+
+.folder-sentence-content {
+  padding: 10px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: #444;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.folder-sentence-tags {
+  padding: 10px;
+  font-size: 15px;
+  color: #999;
+}
+
+/* 문장 컬러 */
+.folder-info.color-1 {
+  background-color: #ffedb2;
+}
+
+.folder-info.color-1 .folder-tab {
+  background-color: #ffe27e;
+}
+
+.folder-info.color-2 {
+  background-color: #ffd484;
+}
+.folder-info.color-2 .folder-tab {
+  background-color: #ffc760;
+}
+
+.folder-info.color-3 {
+  background-color: #fff1dc;
+}
+.folder-info.color-3 .folder-tab {
+  background-color: #ffe9c4;
+}
+
+.folder-info.color-4 {
+  background-color: #f8d1dc;
+}
+.folder-info.color-4 .folder-tab {
+  background-color: #f0b8c4;
+}
+
+.folder-info.color-5 {
+  background-color: #cde8ff;
+}
+.folder-info.color-5 .folder-tab {
+  background-color: #a7d4ff;
+}
+
+.folder-info.color-6 {
+  background-color: #e2f0d9;
+}
+.folder-info.color-6 .folder-tab {
+  background-color: #c7e0b0;
+}
+
+.folder-info.color-7 {
+  background-color: #ede8ff;
+}
+.folder-info.color-7 .folder-tab {
+  background-color: #d8d2ff;
+}

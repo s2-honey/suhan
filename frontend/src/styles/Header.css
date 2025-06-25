@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.header-logo {
+  font-family: 'Tadak', sans-serif;
+  font-size: 52px;
+  font-weight: normal;
+  color: #222;
+  margin-left: 30px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: white;
+  cursor: pointer;
+}

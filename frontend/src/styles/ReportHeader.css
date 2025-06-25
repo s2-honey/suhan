@@ -1,0 +1,27 @@
+.report-header {
+  position: relative; /* 기준 잡기 */
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  height: 48px; /* 높이 고정해주면 정렬 깔끔해짐 */
+}
+
+.back-button {
+  font-size: 24px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  z-index: 1; /* 겹치는 일 방지용 */
+}
+
+.report-header h2 {
+  position: absolute; /* 절대 위치로 중앙 고정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}

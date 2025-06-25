@@ -1,0 +1,52 @@
+.report-container {
+  padding: 20px;
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.report-block {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* 카드 위에 걸쳐 올라오도록 설정 */
+.report-label {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background-color: #ffa64d;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.no-report-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.no-report-image {
+  width: 120px;
+  opacity: 0.7;
+}
+
+.no-report-text {
+  font-size: 16px;
+  color: #666;
+  margin-top: 12px;
+  font-weight: 500;
+}

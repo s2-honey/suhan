@@ -1,0 +1,12 @@
+.emotion-tag {
+  display: inline-block;
+  background-color: #ffe1ba;
+  border: 2px solid #f5b971;
+  color: #333;
+  padding: 6px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 90px; /* 기본 폭 */
+  text-align: center; /* 가운데 정렬 */
+}

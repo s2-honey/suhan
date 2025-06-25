@@ -1,0 +1,65 @@
+.archive-section {
+  background-color: #ffffff;
+  border-top: 3px solid #ffb26f;
+  border-bottom: 3px solid #ffb26f;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  height: 196px;
+  padding: 16px;
+  margin: 24px 0 48px;
+  cursor: pointer;
+}
+
+.archive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+.archive-arrow {
+  font-size: 28px;
+  color: #bbb;
+  padding-right: 16px;
+}
+
+.archive-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.archive-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.archive-icon {
+  width: 80px;
+  height: 80px;
+  margin-top: 0px;
+  margin-right: 26px;
+  margin-left: 8px;
+  object-fit: contain;
+}
+
+.archive-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-bold {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.archive-sub {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}

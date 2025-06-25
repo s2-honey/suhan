@@ -1,0 +1,69 @@
+/* App.css */
+@font-face {
+  font-family: 'Tadak';
+  src: url('../fonts/TDTDTadakTadak.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ✅ 2. 기본 리셋 및 앱 전체 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fffaf5;
+  font-family: 'Tadak', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 598px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #fffefc;
+  overflow-x: hidden;
+}
+
+
+/* ✅ 4. 기본 태그 정리 */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* ✅ 5. Milo 로고 폰트 적용용 클래스 */
+.tadak-font {
+  font-family: 'Tadak', sans-serif;
+}
+
+.app-frame {
+  max-width: 598px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #fffefc;
+  /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);*/
+  position: relative;
+  overflow-x: hidden;
+}

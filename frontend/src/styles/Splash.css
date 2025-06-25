@@ -1,0 +1,168 @@
+/* 🌐 전체 화면 및 글로벌 세팅 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 📌 스플래시 전체 화면 */
+.splash {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;     /* iOS 대응 */
+  background-color: #ffffff;
+  overflow: hidden;      /* ✅ 스크롤 완전 제거 */
+}
+
+
+/* 🎨 상단 주황 영역 */
+.splash-header {
+  width: 100%;
+  height: 40vh; /* 반응형 대응을 위한 상대값 */
+  background-color: #ffb680;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 70px;
+}
+
+/* 🎯 아치형 SVG */
+.arch-svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/* 🐻 Milo 로고 */
+.logo {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  font-family: 'Tadak', sans-serif;
+  animation: bounceIn 1.8s ease-out forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ✏️ 텍스트 + 버튼 영역 */
+.splash-text {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  z-index: 1;
+}
+
+.splash-text p {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Tadak', sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.splash-text button {
+  background-color: #ffb680;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.splash-text button:hover {
+  background-color: #ff983e;
+  transform: scale(1.03);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.splash-text button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 🐾 너구리 캐릭터 이미지 */
+.character {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60vw;              /* ✅ 상대 크기로 조정 (화면 비율 기준) */
+  max-width: 360px;         /* ✅ 최대 너비 제한 */
+  z-index: 0;
+  pointer-events: none;
+  animation: tilt 3s ease-in-out 1 forwards;
+  transform-origin: bottom center;
+  animation-delay: 1.8s;
+}
+
+
+/* 🌀 캐릭터 흔들림 효과 */
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotate(-2deg) translateY(-1px);
+  }
+  50% {
+    transform: rotate(2deg) translateY(0px);
+  }
+  75% {
+    transform: rotate(-1deg) translateY(1px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+/* 🎬 페이드아웃 효과 */
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

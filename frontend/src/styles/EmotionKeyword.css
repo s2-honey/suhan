@@ -1,0 +1,86 @@
+.report-section {
+  background-color: #fffefc;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.card-section {
+  background-color: #ffffff;
+  border-radius: 0px;
+  border-top: 3px solid #ffb26f;
+  border-bottom: 3px solid #ffb26f;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 💡 약한 그림자 */
+  padding: 15px;
+  margin: 24px 0;
+  margin-bottom: 48px;
+}
+
+.keyword-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.report-title {
+  color: #222;
+}
+
+.report-arrow {
+  font-size: 30px;
+  color: #bbb;
+  margin-right: 18px;
+}
+
+/* 전체 묶음 */
+.report-keyword-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+/* 아이콘 + 텍스트 */
+.title-row {
+  display: flex;
+  align-items: start;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: -50px;
+}
+
+/* 아이콘 스타일 */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
+  margin-right: 30px;
+  object-fit: contain;
+}
+
+/* 키워드 리스트 */
+.keyword-list {
+  display: flex;
+  gap: 8px;
+  margin-left: 130px; /* 아이콘 너비 + 간격만큼 들여쓰기 */
+  margin-bottom: 10px;
+}
+
+.keyword-badge {
+  background-color: #fcd9a1;
+  color: #5a402a;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.report-description {
+  font-size: 13px;
+  color: #666;
+  margin-left: 50px;
+}

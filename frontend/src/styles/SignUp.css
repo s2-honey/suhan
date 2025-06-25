@@ -1,0 +1,209 @@
+/* SignUp.css */
+.signup {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  padding-top: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* 로고 */
+.logo2 {
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: 'Tadak', sans-serif;
+}
+
+/* 가입 환영 글*/
+.signup p.subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 90px;
+}
+
+/* 회원가입 폼 */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #444;
+}
+
+.signup-form input {
+  padding: 15px;
+  border: 1.5px solid #ffb680;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  box-shadow: 0 0 0 0.5px rgba(255, 182, 128, 0.3);
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #ffa158;
+}
+
+.signup-form .check-btn {
+  padding: 6.5px 15px;
+  background-color: #ffa158;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signup-form .error {
+  font-size: 12px;
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* 아이디 + 중복확인 버튼*/
+.input-with-button {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-button input {
+  width: 100%;
+  padding: 15px;
+  /* 오른쪽 공간 확보 */
+  border: 1.5px solid #ffb680;
+  border-radius: 15px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.input-with-button .check-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  padding: 10px 15px 10px 15px;
+  background-color: #ff9f4a;
+  color: white;
+  border: none;
+  border-radius: 13px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-with-button .check-btn:hover {
+  background-color: #ff8b26;
+}
+
+.input-with-button .check-btn:active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* 아이디 중복확인 메시지 */
+.id-message {
+  font-size: 13.6px;
+  margin: 3.2px 0 16px 4.8px;
+}
+
+.id-message.valid {
+  color: green;
+}
+
+.id-message.invalid {
+  color: red;
+}
+
+/* 회원가입 버튼 */
+.submit-btn {
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #ff9f4a;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 182, 128, 0.3);
+}
+
+.submit-btn:hover {
+  background-color: #ff8b26;
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* 이용약관 */
+.checkbox-row {
+  padding-top: 15px;
+  align-items: center;
+}
+
+.checkbox-row span {
+  margin-left: 5px;
+  margin-top: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-row input[type='checkbox'] {
+  height: 13.5px;
+  accent-color: #ff9f4a;
+  cursor: pointer;
+}
+
+.required {
+  color: red;
+  font-size: 12px;
+}
+
+/* 약관 팝업*/
+.terms-text {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.modal {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 에러메시지 */
+.error-message {
+  color: red;
+  font-size: 13.6px;
+  margin: 4px 0 8px 4px;
+  padding-left: 3.2px;
+}
+
+/* 페이드 아웃 효과 */
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

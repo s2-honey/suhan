@@ -1,0 +1,142 @@
+/* 아이디 찾기 전체 컨테이너 */
+.findid-container {
+  width: 100%;
+  margin-top: 200px;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* 타이틀 */
+.findid-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 입력 폼 */
+.findid-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1.5px solid #ffb680;
+  border-radius: 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 0.5px rgba(255, 182, 128, 0.3);
+}
+
+.findid-form input:focus {
+  outline: none;
+  border-color: #ffa158;
+}
+
+/* 버튼 */
+.findid-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff9f4a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 182, 128, 0.3);
+  transition: background-color 0.2s;
+}
+
+.findid-form button:hover {
+  background-color: #ff8b26;
+}
+
+.findid-form button:active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* 결과 박스 */
+.result-box {
+  margin-top: 30px;
+}
+
+.result-box h3 {
+  margin: 50px 0 10px 10px;
+}
+
+/* 성공/실패 메시지 공통 */
+.success-box,
+.fail-box {
+  background-color: #fef9f4;
+  border: 1px solid #ffd5aa;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.found-id,
+.no-result {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 버튼 그룹 */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* 회색 버튼 */
+.gray-btn {
+  flex: 1;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gray-btn:hover {
+  background-color: #cfcfcf;
+}
+
+/* 주황 버튼 */
+.blue-btn {
+  flex: 1;
+  background-color: #ffa158;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.blue-btn:hover {
+  background-color: #ff8b26;
+}
+
+/* 페이드 아웃 효과 */
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

@@ -1,0 +1,21 @@
+.report-card {
+  background-color: #fff3dc;
+  border: 2px solid #f5b971;
+  border-radius: 16px;
+  padding: 24px 16px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-label {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #ff8f34;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-line;
+}

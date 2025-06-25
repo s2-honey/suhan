@@ -1,0 +1,130 @@
+/* 로그인 전체화면 구조 */
+.login-container {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #ffffff;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #444;
+}
+
+/* 너구리 + 로고*/
+.character-logo {
+  position: relative;
+}
+
+/* 너구리 */
+.character1 {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  z-index: 1;
+}
+
+/* 로고 */
+.logo1 {
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Tadak', sans-serif;
+}
+
+/* 로그인 폼 구조 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+}
+
+/* 로그인 input 박스 */
+.login-form input {
+  padding: 20px 15px;
+  border: 1.5px solid #ffb680;
+  border-radius: 20px;
+  font-size: 13px;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255, 182, 128, 0.3);
+}
+
+.login-form button {
+  padding: 20px;
+  background-color: #ff9f4a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 182, 128, 0.3);
+}
+
+.login-form button:hover {
+  background-color: #ff8b26;
+}
+
+.login-form button:active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* 아이디/비번 찾기 */
+.find-info {
+  margin: 20px 0px 5px 0px;
+  text-align: right;
+  font-size: 13px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.find-info span {
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0px 5px;
+}
+
+/* 회원가입 */
+.login-footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #555555;
+}
+
+.login-footer span {
+  color: #ff9f4a;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-footer span:hover {
+  color: #ff7a1a;
+  /* 좀 더 진한 오렌지 색상 */
+}
+
+/* 페이드 아웃 효과 */
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
